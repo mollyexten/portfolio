@@ -13,7 +13,7 @@ export default function ContactMe({windowDimension}) {
   })
   const { user_name, user_email, message } = formData
   // State for managing the popup component:
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   
   // Map out contact links and store in linksJSX
   const linksJSX = linkData.map((link, index) => (
