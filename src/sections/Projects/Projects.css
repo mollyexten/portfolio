@@ -1,0 +1,8 @@
+@media (min-width: 1190px) {
+  .projects-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

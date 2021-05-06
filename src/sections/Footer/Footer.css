@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.footer-copyright, .footer-links {
+  margin: 0px;
+}
+
+.footer-copyright {
+  color: var(--portfolio-gray);
+  margin-left: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  width: 30vw;
+}
+
+@media (max-width: 640px) {
+  .footer-links {
+    width: 40vw;
+  }
+}

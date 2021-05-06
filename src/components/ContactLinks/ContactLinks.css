@@ -1,0 +1,14 @@
+.contact-info-link {
+  padding: 10px 0px;
+  font-weight: 800;
+}
+
+.contact-url {
+  font-weight: 400;
+}
+
+@media (max-width: 712px) {
+  .link-new-line {
+    display: none;
+  }
+}

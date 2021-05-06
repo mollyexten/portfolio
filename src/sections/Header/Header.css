@@ -1,0 +1,26 @@
+header {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+}
+
+.header-background {
+  width: 100%;
+  padding: 0;
+}
+
+.header-text {
+  position: absolute;
+  font-size: 3vw;
+  top: 15vw;
+  right: 8vw;
+}
+
+@media (max-width: 720px) {
+  .header-text {
+    top: 30vw;
+    left: 10vw;
+    font-size: 7vw;
+    text-align: right;
+  }
+}

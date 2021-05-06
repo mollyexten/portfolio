@@ -1,0 +1,71 @@
+/* =================== BASIC ABOUT STYLES =================================== */
+
+.about-description {
+  line-height: 1.7;
+}
+
+.resume-button {
+  align-self: center;
+}
+
+.profile-pic {
+  border-radius: 8px;
+  max-width: 30vw;
+  margin-right: 0px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-stack {
+  margin: 10px 0px 0px 0px;
+}
+
+/* =================== DESKTOP ABOUT STYLES =================================== */
+
+.about-container-desktop {
+  display: flex;
+  align-items: flex-start;
+}
+
+.desktop-nested {
+  padding-right: 30px;
+}
+
+/* =================== TABLET & MOBILE ABOUT STYLES =================================== */
+.about-container-mobile-tablet {
+  flex-direction: column;
+}
+
+/* =================== TABLET ABOUT STYLES =================================== */
+.mobile-tablet-nested {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 1200px) {  
+  .about-details {
+    margin: 20px 0px;
+  }
+  
+  .profile-pic {
+    max-width: 35vw;
+  }
+}
+
+/* =================== MOBILE ABOUT STYLES =================================== */
+
+@media (max-width: 640px) {
+  .mobile-tablet-nested {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    margin-top: 20px;
+    max-width: 65vw;
+  }
+}

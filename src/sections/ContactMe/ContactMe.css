@@ -1,0 +1,88 @@
+#contact-me {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact-background {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.contact-container {
+  position: absolute;
+  width: 95%;
+  top: 10px;
+  left: 20px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-links {
+  width: 50%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.contact-form>* {
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.send-button {
+  width: 200px;
+}
+
+@media (max-width: 712px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-links, .contact-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-container {
+    top: 5px;
+    left: 10px;
+  }
+
+  .contact-header {
+    margin-bottom: 0px;
+  }
+
+  .contact-links, .contact-form {
+    width: 95%;
+  }
+
+  .contact-links {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .contact-form>* {
+    margin: 5px 0px;
+    padding: 2px 5px;
+  }
+
+  .send-button {
+    width: 150px;
+  }
+}
