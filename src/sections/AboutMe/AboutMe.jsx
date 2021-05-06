@@ -3,7 +3,7 @@ import "./AboutMe.css";
 export default function AboutMe({ windowDimension }) {
   
   const downloadFile = () => {
-    window.location.href = "https://drive.google.com/file/d/1vZQORmskiYkhHhFr6h7Ti01gmHmcvEHy/view?usp=sharing"
+    window.location.href = "https://drive.google.com/file/d/1bTwtlcTnaPqa9QxGc2ADUKgMl8SaNUOk/view?usp=sharing"
   }
 
   const isDesktop = windowDimension >= 1200;
