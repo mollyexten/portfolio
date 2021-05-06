@@ -1,24 +1,10 @@
 import "./AboutMe.css";
-import { useState, useEffect } from "react"
 
-export default function AboutMe() {
-  const [windowDimension, setWindowDimension] = useState(null);
+export default function AboutMe({ windowDimension }) {
   
   const downloadFile = () => {
     window.location.href = "https://drive.google.com/file/d/1vZQORmskiYkhHhFr6h7Ti01gmHmcvEHy/view?usp=sharing"
   }
-
-  useEffect(() => {
-    setWindowDimension(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimension(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const isDesktop = windowDimension >= 1200;
   

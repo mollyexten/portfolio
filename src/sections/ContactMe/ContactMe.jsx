@@ -2,26 +2,18 @@ import "./ContactMe.css";
 import ContactLinks from "../../components/ContactLinks/ContactLinks";
 import Popup from "../../components/Popup/Popup";
 import { linkData } from "../../services/linkData.js";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import emailjs from "emailjs-com";
 
-export default function ContactMe() {
-  // Responsive formatting for different background images
-  const [windowDimension, setWindowDimension] = useState(null);
-  
-  useEffect(() => {
-    setWindowDimension(window.innerWidth);
-  }, []);
-  
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimension(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  
-  const isDesktop = windowDimension >= 720;
+export default function ContactMe({windowDimension}) {
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    message: ""
+  })
+  const { user_name, user_email, message } = formData
+  // State for managing the popup component:
+  const [isOpen, setIsOpen] = useState(true)
   
   // Map out contact links and store in linksJSX
   const linksJSX = linkData.map((link, index) => (
@@ -32,15 +24,6 @@ export default function ContactMe() {
       url={link.url}
     />
   ));
-  
-  // Store values of form data in state
-  const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
-    message: ""
-  })
-  
-  const { user_name, user_email, message } = formData
   
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -70,12 +53,7 @@ export default function ContactMe() {
     handleReset()
   }
 
-  // State and function for managing the popup component:
-  const [isOpen, setIsOpen] = useState(false)
-  const togglePopup = () => {
-    setIsOpen(!isOpen)
-  }
-
+  // Function for clearing the form after use:
   const handleReset = () => {
     setFormData({
       user_name: "",
@@ -83,6 +61,13 @@ export default function ContactMe() {
       message: ""
     })
   }
+  // Function for managing the popup component:
+  const togglePopup = () => {
+    setIsOpen(!isOpen)
+  }
+
+  const isDesktop = windowDimension >= 720;
+  
   return (
     <>
       <h2>

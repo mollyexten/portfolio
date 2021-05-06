@@ -1,53 +1,78 @@
+/* ================= GLOBAL NAV STYLES ====================================== */
 nav {
   width: 100%;
+  height: 100px;
   position: fixed;
   top: 0;
   z-index: 1;
   background-color: rgba(255, 255, 255, .85);
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
 }
 
-.desktop-nav-header, .mobile-nav-header {
-  margin: 10px 20px;
+.hamburger-close, .nav-link {
+  cursor: pointer;
 }
+/* ================= DESKTOP NAV STYLES ====================================== */
 
-.desktop-nav {
-  display: grid;
-  grid-template-columns: 40% 1fr;
-}
-
-.desktop-nav-header {
+.nav-header {
   font-size: 5vw;
-  grid-column: 1 / 2;
+  flex-grow: 1;
 }
 
 .desktop-console {
-  grid-column: 2 / 3;
+  flex-grow: 2;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0px 30px;
+  padding: 10px 30px 0px 30px;
+  margin: 0px 10px;
 }
 
 .desktop-nav-link {
   font-family: 'Sanchez', serif;
   color: var(--portfolio-gray);
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
-.mobile-nav{
-    display: flex;
+/* =============== Breakpoints for very large screen sizes ================= */
+@media (min-width: 1500px) {
+  nav {
+    height: 150px;
+  }
+}
+
+@media (min-width: 2200px) {
+  nav {
+    height: 200px;
+  }
+}
+
+/* ================= MOBILE NAV STYLES ====================================== */
+@media (max-width: 640px) {
+  nav {
+    height: 80px;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
+  }
+
+  .nav-header {
+    font-size: 2em;
+    flex-grow: 0;
+  }
+  
+  .nav-link {
+    font-family: 'Sanchez', serif;
+  }
 }
 
-.mobile-nav-header {
-  font-size: 2em;
+.hamburger-image {
+  flex-grow: 0;
 }
 
 .hamburger-dropdown {
   position: fixed;
-  top: -30px;
+  top: 0;
   left: 0;
   z-index: 3;
   padding-top: 10px;
@@ -62,6 +87,8 @@ nav {
 }
 
 .hamburger-close {
+  margin: 0px;
+  text-align: center;
   grid-area: X;
 }
 
@@ -79,12 +106,4 @@ nav {
 
 .contact-link {
   grid-area: C;
-}
-
-.hamburger-close, .mobile-nav-link {
-  cursor: pointer;
-}
-
-.mobile-nav-link {
-  font-family: 'Sanchez', serif;
 }

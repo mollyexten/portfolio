@@ -1,3 +1,9 @@
 .icon-link {
   width: 25px;
 }
+
+@media (min-width: 1400px) {
+  .icon-link {
+    width: 35px;
+  }
+}

@@ -9,6 +9,7 @@ export default function Project(props) {
     site,
     github
   } = props
+  
   return (
     <div className="project-card">
       <img src={image} alt={alt} className="project-image"/>
