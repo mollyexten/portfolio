@@ -9,7 +9,7 @@ export default function ContactLinks(props) {
   return (
           <li className="contact-info-link">{ name }: &nbsp;
             <br className="link-new-line"/><span> 
-              <a href={href} target="_blank" className="contact-url">{url}</a>
+              <a href={href} className="contact-url">{url}</a>
             </span >
           </li >
 )
