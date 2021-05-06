@@ -32,7 +32,7 @@ export default function AboutMe() {
           <div className="about-container-desktop">
             <div className="desktop-nested">
               <p className="about-description">
-                My passion for coding stems from my lifelong love of languages, and, through my background in teaching, I have gained valuable experience working in diverse environments and listening to others. I apply a thorough, reflective, and creative approach to my projects and thrive in collaborative work environments. I recently completed a three-month bootcamp in software engineering and hope to bring my skills in communication, organization, and problem-solving to work!
+                My passion for coding stems from my lifelong love of languages, and, through my background in teaching, I have gained valuable experience working in diverse settings and listening to others. I apply a thorough, reflective, and creative approach to my projects and thrive in collaborative work environments. I recently completed a three-month bootcamp in software engineering and hope to bring my skills in communication, organization, and problem-solving to work!
               </p>
               <div className="about-details">
                 <button

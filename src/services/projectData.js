@@ -11,7 +11,7 @@ export const projectData = [
     image: "/assets/fullstack.png",
     alt: "fullstack coffee app",
     title: "Full Stack Coffee Co.",
-    description: "Full Stack Coffee Co. simulates the online shopping experience for home baristas. It is built with React and Express.",
+    description: "Full Stack Coffee Co. simulates the online shopping experience for home baristas. It is a collaborative project built with React and Express.",
     site: "https://fullstackcoffee.netlify.app/",
     github: "https://github.com/mollyexten/fscc"
   },
