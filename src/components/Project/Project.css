@@ -28,6 +28,13 @@
   border: 1px solid var(--portfolio-gray);
   font-weight: 800;
   padding: 8px 15px;
+  transition-property: background-color, color;
+  transition-duration: 0.75s;
+}
+
+.link-button:hover {
+  background-color: var(--portfolio-gray);
+  color: white;
 }
 
 /* ================ PROJECT DESKTOP STYLES ============================== */

@@ -54,7 +54,6 @@ button, input[type="submit"] {
   box-shadow: none;
   transition-property: background-color, color;
   transition-duration: 0.75s;
-  transition-delay: 0s;
 }
 
 button:hover, input[type="submit"]:hover {
