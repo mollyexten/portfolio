@@ -11,9 +11,7 @@ nav {
   padding: 0px 20px;
 }
 
-.hamburger-close, .nav-link {
-  cursor: pointer;
-}
+
 /* ================= DESKTOP NAV STYLES ====================================== */
 
 .nav-header {
@@ -30,11 +28,22 @@ nav {
   margin: 0px 10px;
 }
 
-.desktop-nav-link {
-  font-family: 'Sanchez', serif;
-  color: var(--portfolio-gray);
-  font-size: 2.5vw;
+@media (min-width: 641px) {
+  .nav-link {
+    font-family: 'Sanchez', serif;
+    color: var(--portfolio-gray);
+    font-size: 2.5vw;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 0s;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.25);
+  }
 }
+
+
 
 /* =============== Breakpoints for very large screen sizes ================= */
 @media (min-width: 1500px) {
@@ -64,6 +73,8 @@ nav {
   .nav-link {
     font-family: 'Sanchez', serif;
   }
+
+
 }
 
 .hamburger-image {
@@ -95,6 +106,10 @@ nav {
   to {
     top: -80
   }
+}
+
+.hamburger-close, .nav-link {
+  cursor: pointer;
 }
 
 .hamburger-close {
