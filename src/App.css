@@ -52,6 +52,14 @@ button, input[type="submit"] {
   padding: 8px 15px;
   border: 1px solid var(--portfolio-gray);
   box-shadow: none;
+  transition-property: background-color, color;
+  transition-duration: 0.75s;
+  transition-delay: 0s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: var(--portfolio-gray);
+  color: white;
 }
 
 /* No bulleting on lists */
