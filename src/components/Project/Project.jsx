@@ -12,7 +12,9 @@ export default function Project(props) {
   
   return (
     <div className="project-card">
-      <img src={image} alt={alt} className="project-image"/>
+      <a href={site}>
+      <img src={image} alt={alt} className="project-image" />
+      </a>
       <article className="project-description">
         <h3>{title}</h3>
         <p className="project-paragraph">{description}</p>
