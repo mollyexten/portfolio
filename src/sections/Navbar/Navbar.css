@@ -34,8 +34,7 @@ nav {
     color: var(--portfolio-gray);
     font-size: 2.5vw;
     transition-property: transform;
-    transition-duration: 1s;
-    transition-delay: 0s;
+    transition-duration: 0.1s;
   }
 
   .nav-link:hover {

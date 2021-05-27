@@ -4,9 +4,19 @@ header {
   margin: 0px;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .header-background {
   width: 100%;
   padding: 0;
+  animation: fade-in 2s;
 }
 
 .header-text {
@@ -14,6 +24,7 @@ header {
   font-size: 3vw;
   top: 15vw;
   right: 8vw;
+  animation: fade-in 4s;
 }
 
 @media (max-width: 720px) {
