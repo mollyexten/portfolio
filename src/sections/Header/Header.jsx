@@ -9,13 +9,13 @@ export default function Header({ windowDimension }) {
         <img
           src="../../assets/header-desktop.jpg"
           alt="header-background"
-          className="header-background"
+          className="header-background desktop-background"
         />
       ) : (
         <img
           src="../../assets/header-tablet-mobile.jpg"
           alt="header-background"
-          className="header-background"
+          className="header-background mobile-background"
         />
       )}
         <h1 className="header-text">

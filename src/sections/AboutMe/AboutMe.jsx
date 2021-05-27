@@ -21,12 +21,12 @@ export default function AboutMe({ windowDimension }) {
                 My passion for coding stems from my lifelong love of languages, and, through my background in teaching, I have gained valuable experience working in diverse settings and listening to others. I apply a thorough, reflective, and creative approach to my projects and thrive in collaborative work environments. I recently completed a three-month bootcamp in software engineering and hope to bring my skills in communication, organization, and problem-solving to work!
               </p>
               <div className="about-details">
-                <button
-                  onClick={downloadFile}
-                  className="resume-button"
+                <a
+                  href="https://drive.google.com/file/d/1bTwtlcTnaPqa9QxGc2ADUKgMl8SaNUOk/view?usp=sharing"
+                  target="_blank"
                 >
                   download resume
-                </button>
+                </a>
                 <h4 className="tech-stack">Tech Stack:</h4>
                 <p className="tech-stack">HTML | CSS | Javascript | React | Express | MongoDB | Ruby | Rails | Python | PostgreSQL </p>
               </div>
