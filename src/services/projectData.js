@@ -1,6 +1,6 @@
 export const projectData = [
   {
-    image: "/assets/flashy.png",
+    image: "https://i.imgur.com/zRjmbVo.png",
     alt: "flashy app",
     title: "flashy",
     description: "flashy is a mobile-first flashcarp app built with React and Ruby on Rails. Users can study, create, and modify their own decks of flashcards.",
